@@ -218,8 +218,8 @@ GameObject:
   - component: {fileID: 802704291}
   - component: {fileID: 802704290}
   - component: {fileID: 802704289}
-  - component: {fileID: 802704292}
   - component: {fileID: 802704293}
+  - component: {fileID: 802704294}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -277,19 +277,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &802704292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 802704288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ea13a7043b49c44fb493a6ab9252b2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  status: {fileID: 0}
 --- !u!114 &802704293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,7 +289,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97fc80187703110428f8c8f13fec15ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: YoutubeGame
+  targetScene: Youtube
+--- !u!114 &802704294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802704288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd8d691dd9fece4b95462a6221f04ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1164360375
 GameObject:
   m_ObjectHideFlags: 0

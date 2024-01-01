@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Youtube.unity
     guid: d5590c3ce54074644bc7654bb48482ac
+  - enabled: 1
+    path: Assets/Scenes/FirstScene.unity
+    guid: 9210d28058bdfdd46b1073b4d42d2630
+  - enabled: 1
+    path: Assets/Scenes/Begging.unity
+    guid: d12d7a85dff416948ab68bf7fb0d8b85
   m_configObjects: {}
