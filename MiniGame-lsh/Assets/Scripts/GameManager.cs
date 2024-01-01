@@ -1,23 +1,29 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    public string targetScene;
+    public TMP_Text status;
 
-    public void ChangeScene()
-    {
-        SceneManager.LoadScene(targetScene); //해당 씬으로 이동
-    }
-    
-    // Start is called before the first frame update
     void Awake()
     {
-        PlayerPrefs.SetInt("Name", 0);
+        //PlayerPrefs.SetInt("Name", 0);
         PlayerPrefs.SetInt("Fame", 0);
         PlayerPrefs.SetInt("Money", 0);
+        status.text = "명성: " + PlayerPrefs.GetInt("Fame")
+                    + "\n돈: " + PlayerPrefs.GetInt("Money") + "원";
+    }
+    
+    public void StatusText()
+    {
+        status.text = "명성: " + PlayerPrefs.GetInt("Fame")
+                    + "\n돈: " + PlayerPrefs.GetInt("Money") + "원";
     }
 
+    private void Update()
+    {
+        StatusText();
+    }
 }
