@@ -9,8 +9,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        status.text = "명성: " + PlayerPrefs.GetInt("Fame")
-                    + "\n돈: " + PlayerPrefs.GetInt("Money") + "원";
+        StatusText();
     }
     
     public void StatusText()
